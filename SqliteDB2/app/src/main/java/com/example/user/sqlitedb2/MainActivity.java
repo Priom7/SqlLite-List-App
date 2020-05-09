@@ -18,7 +18,8 @@ import java.util.HashMap;
 public class MainActivity extends ListActivity  implements android.view.View.OnClickListener{
 
     Button btnAdd,btnGetAll;
-    TextView student_Id;
+    TextView student_Id, student_email, student_age;
+
 
     @Override
     public void onClick(View view) {
@@ -45,7 +46,7 @@ public class MainActivity extends ListActivity  implements android.view.View.OnC
                         startActivity(objIndent);
                     }
                 });
-                ListAdapter adapter = new SimpleAdapter( MainActivity.this,studentList, R.layout.view_student_entry, new String[] { "id","name"}, new int[] {R.id.student_Id, R.id.student_name});
+                ListAdapter adapter = new SimpleAdapter( MainActivity.this,studentList, R.layout.view_student_entry, new String[] { "id","name","email","age"}, new int[] {R.id.student_Id, R.id.student_name, R.id.student_email, R.id.student_age});
                 setListAdapter(adapter);
             }else{
                 Toast.makeText(this,"No student!",Toast.LENGTH_SHORT).show();

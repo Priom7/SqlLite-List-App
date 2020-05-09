@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:padding="2dp"
+    android:layout_margin="2dp"
+  >
 
 
     <ScrollView
@@ -26,25 +29,32 @@
 
     <Button
         android:id="@+id/btnAdd"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="85dp"
         android:gravity="center"
-        android:text="Add" />
+        android:text=" Add"
+        android:drawableLeft="@drawable/ui"
+        android:padding="2dp"
+        android:background="#ffff"
+        />
 
 
 
 
     <Button
         android:id="@+id/btnGetAll"
-        android:layout_width="wrap_content"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnAdd"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="-85dp"
         android:gravity="center"
-        android:text="List All" />
+        android:text=" List All"
+        android:drawableLeft="@drawable/agenda"
+        android:padding="2dp"
+        android:background="#ffff"/>
 
 </RelativeLayout>

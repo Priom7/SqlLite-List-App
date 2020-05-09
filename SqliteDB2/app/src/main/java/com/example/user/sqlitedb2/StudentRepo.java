@@ -72,6 +72,8 @@ public class StudentRepo {
                 HashMap<String, String> student = new HashMap<String, String>();
                 student.put("id", cursor.getString(cursor.getColumnIndex(Student.KEY_ID)));
                 student.put("name", cursor.getString(cursor.getColumnIndex(Student.KEY_name)));
+                student.put("email", cursor.getString(cursor.getColumnIndex(Student.KEY_email)));
+                student.put("age", cursor.getString(cursor.getColumnIndex(Student.KEY_age)));
                 studentList.add(student);
 
             } while (cursor.moveToNext());
